@@ -1,0 +1,7 @@
+node_modules/
+*.log
+.DS_Store
+.env
+backups/*.tar.gz
+data/*.json
+!data/.gitkeep
