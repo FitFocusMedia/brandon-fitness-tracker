@@ -1,6 +1,12 @@
+require('dotenv').config();
 const express = require('express');
 const path = require('path');
 const fs = require('fs').promises;
+
+console.log('ENV LOADED:', { 
+  username: process.env.AUTH_USERNAME, 
+  password: process.env.AUTH_PASSWORD 
+});
 
 const app = express();
 const PORT = process.env.PORT || 8896;
